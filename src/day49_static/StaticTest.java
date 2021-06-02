@@ -12,7 +12,7 @@ public class StaticTest {
     StaticMethods stm = new StaticMethods();
     stm.instanceMethod();
 
-    //2.static method can only access other static varibles and methods
+    //2.static method can only access other static variables and methods
         System.out.println(word);
     }
 }
