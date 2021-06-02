@@ -11,10 +11,10 @@ public class BankAccountTest {
         BankAccount wife = new BankAccount();
         wife.user= "wife";
         wife.showBalance();
-wife.spend(400.00);
-wife.showBalance();
+        wife.spend(400.00);
+        wife.showBalance();
 
-husband.showBalance();
-        System.out.println(BankAccount.balance);
+        husband.showBalance();
+       // System.out.println(BankAccount.balance);
     }
 }

@@ -1,7 +1,7 @@
 package day49_static;
 
 public class BankAccount {
- static public double balance = 500.0;
+    static double balance = 500.0;//1 copy
     String user;
 
     public void spend(double amount){
@@ -10,7 +10,7 @@ public class BankAccount {
 
     }
     public void showBalance(){
-        System.out.println("Current balance ="+ balance);
+        System.out.println("Current balance = "+ balance);
     }
 
 }
