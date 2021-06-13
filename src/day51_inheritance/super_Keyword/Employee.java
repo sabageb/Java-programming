@@ -1,6 +1,8 @@
+
+
 package day51_inheritance.super_Keyword;
 
-public class Employee extends Object {
+public class Employee {
 
     String jobTitle;
 
@@ -8,7 +10,7 @@ public class Employee extends Object {
         return 52 * 40 * hourlyRate *1.1;
 
     }
-//toStrring method is inherited from object class
+// toString method is inherited from object class
     @Override
     public String toString() {
         return "Employee{" +
