@@ -7,16 +7,27 @@ public class ElectricCar {
     private double price;
     private int year;
     private int range;
+    private static int count;// all object will share this variable
+    public static final int  MAX_RANGE = 400;
 
 
     public ElectricCar(String make, String model, double price, int year, int range) {
-
-        setMake(make);//this.make=make;they are same, useful when setter has soe condition
-        //this.make=make;
+        setMake(make);// re-use the code in the setter condition
         this.model = model;
         this.price = price;
         this.year = year;
         this.range = range;
+        count++;//increase count by 1 - everytime new car is created
+
+    }
+
+    public final void charge(){
+        System.out.println("Charging the electric car using plug-in");
+        this.range = MAX_RANGE;
+
+    }
+    public static int getCount() {
+        return count;
     }
 
     @Override
@@ -37,18 +48,31 @@ public class ElectricCar {
     public void setRange(int range) {
         this.range = range;
     }
-// model3.drive(34);
-    protected void drive(int miles){
 
-        if(range == 0 || range - miles < 0){
+    // model3.drive(34);
+    protected void drive(int miles) {
+
+        if (range == 0 || range - miles < 0) {
             System.out.println("ERROR: cannot drive that car, need to charge");
 
-        }else {
-            range-=miles;
+        } else {
+            range -= miles;
             System.out.println("Driving" + miles + "miles.....");
         }
 
+    }
 
+
+    public String getMake() {
+        return make;
+    }
+
+    public void setMake(String make) {
+        if(make.isEmpty()){
+            System.out.println("ERROR: Make cannot be blank");
+        }else {
+            this.make = make;
+        }
     }
 
     public String getModel() {
@@ -57,14 +81,6 @@ public class ElectricCar {
 
     public void setModel(String model) {
         this.model = model;
-    }
-
-    public String getMake() {
-        return make;
-    }
-
-    public void setMake(String make) {
-        this.make = make;
     }
 
     public double getPrice() {
@@ -82,4 +98,9 @@ public class ElectricCar {
     public void setYear(int year) {
         this.year = year;
     }
-}
+
+    public static void setCount(int count) {
+        ElectricCar.count = count;
+    }
+    }
+
