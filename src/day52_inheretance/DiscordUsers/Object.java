@@ -1,9 +1,9 @@
 
-/**
-package day52_inheretance.discordusers;
+
+package day52_inheretance.DiscordUsers;
 
 
-public class User extends Object {
+ class User extends Object {
     private String role;
     private String name;
     private int id;
@@ -13,8 +13,6 @@ public class User extends Object {
     }
 
     public User(String role, String name, int id) {
-
-
         System.out.println("User class 3 args constructor");
         this.role = role;
         this.name = name;
@@ -51,4 +49,3 @@ public void setId(int id){
 }
 
 }
- */

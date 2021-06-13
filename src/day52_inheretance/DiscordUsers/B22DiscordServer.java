@@ -1,7 +1,5 @@
-/**
-package day52_inheretance.discordusers;
 
-
+package day52_inheretance.DiscordUsers;
 
 public class B22DiscordServer {
     public static void main(String[] args) {
@@ -23,4 +21,3 @@ user1.setRole("Student");
 
     }
 }
-*/
