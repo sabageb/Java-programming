@@ -1,3 +1,4 @@
+/**
 package day50_inheretance;
 
 public class InheritanceTest {
@@ -33,3 +34,4 @@ public class InheritanceTest {
 
     }
 }
+*/
