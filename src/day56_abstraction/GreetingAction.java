@@ -12,6 +12,15 @@ public class GreetingAction {
         gt.hi();
         gt.bye();
 
+        Japanise jp =new Japanise();
+        jp.hi();
+        jp.bye();
+
+        gt= new Japanise();
+        gt.hi();
+        gt.bye();
+
+
 
 
     }
