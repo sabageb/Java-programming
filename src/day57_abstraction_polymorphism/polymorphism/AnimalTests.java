@@ -1,11 +1,14 @@
+/**
 package day57_abstraction_polymorphism.polymorphism;
 
 
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class AnimalTests {
     public static void main(String[] args) {
+
         Animal a1 =new Animal();// not polymorphic , data type and object are same
         a1.makeNoise();
 
@@ -25,6 +28,7 @@ public class AnimalTests {
          * polymorphic lis of object. List data type is parent class
          * objects are any of child classes
          */
+/**
         List<Animal> listOfAnimals =new ArrayList<>();
         listOfAnimals.add(new Dog());
         listOfAnimals.add(new Dog());
@@ -37,3 +41,5 @@ public class AnimalTests {
 
     }
 }
+
+*/
